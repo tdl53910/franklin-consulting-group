@@ -299,3 +299,16 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+.hero-divider {
+  width: 80px;
+  height: 4px;
+  background-color: var(--bulldog-red);
+  margin-bottom: 1.5rem;
+}
+
+.footer-rule {
+  width: 40px;
+  height: 2px;
+  background: var(--bulldog-red);
+  margin: 1rem auto 0;
+}
