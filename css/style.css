@@ -290,3 +290,45 @@ a:hover {
     max-width: 200px;
   }
 }
+/* =========================================
+   Learn More Buttons (Real Button Style)
+========================================= */
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.75rem;
+  padding: 0.65rem 1.6rem;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--chapel-white);
+  background-color: var(--bulldog-red);
+  border: 2px solid var(--bulldog-red);
+  border-radius: 4px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #9f0a26; /* darker UGA red */
+  border-color: #9f0a26;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.learn-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
