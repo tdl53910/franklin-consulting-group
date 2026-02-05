@@ -528,8 +528,9 @@ html {
   border-radius: 12px;
 }
 /* ==============================
-   Mobile Navigation
+   Mobile Navigation (FINAL, CLEAN)
 ================================ */
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -539,6 +540,10 @@ html {
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .nav-toggle span {
@@ -548,35 +553,14 @@ html {
   border-radius: 2px;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #fff;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    padding: 1.5rem 0;
-    display: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-  }
+.nav-toggle:focus,
+.nav-toggle:focus-visible {
+  outline: none;
 }
+
+/* ==============================
+   Mobile Styles
+================================ */
 @media (max-width: 768px) {
 
   .nav-container {
@@ -584,22 +568,21 @@ html {
     align-items: center;
   }
 
+  /* Prevent logo from touching hamburger */
+  .nav-brand {
+    padding-right: 3rem;
+  }
+
+  /* Hamburger */
   .nav-toggle {
+    display: flex;
     position: absolute;
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
   }
 
-}
-/* =========================================
-   Mobile Navigation (Centered Dropdown)
-========================================= */
-@media (max-width: 768px) {
-  .nav-container {
-    align-items: center;
-  }
-
+  /* Dropdown menu */
   .nav-links {
     position: absolute;
     top: 100%;
@@ -614,6 +597,7 @@ html {
     background: var(--chapel-white);
     padding: 1.5rem 0;
     border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   }
 
   .nav-links.active {
@@ -628,24 +612,13 @@ html {
     font-size: 1rem;
   }
 }
-/* =========================================
-   Remove default button artifacts (nav toggle)
-========================================= */
-.nav-toggle {
-  background: none;
-  border: none;
-  padding: 0;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.nav-toggle:focus,
-.nav-toggle:focus-visible {
-  outline: none;
-}
 @media (max-width: 768px) {
-  .nav-brand {
-    padding-right: 3rem;
+  .nav-brand img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-brand span {
+    font-size: 0.95rem;
   }
 }
