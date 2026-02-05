@@ -527,3 +527,77 @@ html {
   padding: 2.5rem 2rem;
   border-radius: 12px;
 }
+/* ==============================
+   Mobile Navigation
+================================ */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  height: 2px;
+  width: 100%;
+  background: #111;
+  border-radius: 2px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    display: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav-container {
+    position: relative;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+@media (max-width: 768px) {
+
+  .nav-links {
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
