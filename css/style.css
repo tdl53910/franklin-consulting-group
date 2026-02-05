@@ -644,3 +644,8 @@ html {
 .nav-toggle:focus-visible {
   outline: none;
 }
+@media (max-width: 768px) {
+  .nav-brand {
+    padding-right: 3rem;
+  }
+}
