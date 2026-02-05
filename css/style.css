@@ -1,19 +1,17 @@
 /* =========================================
-   UGA Brand Variables
+   Brand Variables (ORIGINAL)
 ========================================= */
 :root {
   --bulldog-red: #BA0C2F;
   --arch-black: #000000;
   --chapel-white: #FFFFFF;
-
   --text-dark: #1a1a1a;
   --text-muted: #555555;
-  --bg-light: #ffffff;
   --bg-alt: #f5f5f5;
 }
 
 /* =========================================
-   Global Reset & Safety Nets
+   Global Reset
 ========================================= */
 * {
   margin: 0;
@@ -21,7 +19,6 @@
   box-sizing: border-box;
 }
 
-/* Safari / mobile image safety */
 img {
   max-width: 100%;
   height: auto;
@@ -34,21 +31,13 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--bg-light);
+  background-color: var(--chapel-white);
   color: var(--text-dark);
   line-height: 1.6;
 }
 
-/* Reduced motion accessibility */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-
 /* =========================================
-   Navigation
+   Navigation (LOGO SIZE RESTORED)
 ========================================= */
 .nav {
   background: var(--chapel-white);
@@ -61,31 +50,31 @@ body {
 .nav-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Brand */
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .nav-brand img {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
 }
 
 .nav-brand span {
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
+  font-size: 1.05rem;
   color: var(--arch-black);
 }
 
-/* Links */
+/* Nav links + underline animation */
 .nav-links {
   list-style: none;
   display: flex;
@@ -125,11 +114,11 @@ body {
 }
 
 /* =========================================
-   Hero
+   Hero (STABLE + ANIMATED)
 ========================================= */
 .hero {
   background-color: var(--chapel-white);
-  padding: 6rem 1rem;
+  padding: 4.75rem 1rem 3.75rem;
 }
 
 .hero-content {
@@ -137,26 +126,30 @@ body {
   margin: 0 auto;
   text-align: center;
 
-  /* hero entrance animation */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   animation: fadeUp 0.9s ease-out forwards;
 }
 
 .hero-logo {
-  max-width: 280px;
-  margin: 0 auto 2rem;
+  width: 280px;
+  margin-bottom: 2rem;
 }
 
 .hero-divider {
   width: 80px;
   height: 4px;
   background-color: var(--bulldog-red);
-  margin: 0 auto 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
   font-family: "Libre Baskerville", serif;
   font-size: 2.75rem;
   margin-bottom: 1rem;
+  color: var(--arch-black);
 }
 
 .hero p {
@@ -178,7 +171,7 @@ body {
 }
 
 /* =========================================
-   Sections (SCROLL ANIMATION FIXED)
+   Sections + Scroll Reveal
 ========================================= */
 .section {
   padding: 4rem 1rem;
@@ -188,17 +181,19 @@ body {
   background-color: var(--bg-alt);
 }
 
-/* ⬇️ animation lives HERE, not on .section */
 .section-container {
   max-width: 900px;
   margin: 0 auto;
+}
 
+/* Scroll animation */
+.reveal {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(26px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.section.visible .section-container {
+.reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -207,6 +202,7 @@ body {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--arch-black);
 }
 
 .section p {
@@ -215,7 +211,7 @@ body {
 }
 
 /* =========================================
-   Grid / Cards (HOVER FIXED)
+   Grid Cards (HOVER LIFT)
 ========================================= */
 .grid {
   display: grid;
@@ -229,13 +225,12 @@ body {
   background: var(--chapel-white);
   padding: 1.75rem;
   border-left: 4px solid var(--bulldog-red);
-
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .grid li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .grid h3 {
@@ -244,14 +239,105 @@ body {
 }
 
 /* =========================================
-   Links
+   Buttons (HOVER + PRESS)
 ========================================= */
-a {
-  color: var(--bulldog-red);
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.75rem;
+  padding: 0.65rem 1.6rem;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--chapel-white);
+  background-color: var(--bulldog-red);
+  border: 2px solid var(--bulldog-red);
+  border-radius: 4px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
-a:hover {
-  text-decoration: none;
+.learn-more-btn:hover {
+  background-color: #9f0a26;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.learn-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   Feature Sections (FIXED LAYOUT)
+========================================= */
+.feature {
+  padding: 4rem 1rem;
+}
+
+.feature-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.feature-text {
+  max-width: 520px;
+}
+
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Feature Images (DEPTH HOVER) */
+.image-frame {
+  width: 520px;
+  height: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: var(--chapel-white);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.22);
+
+  transform: translateY(36px);
+  transition: transform 0.35s ease;
+}
+
+.image-frame:hover {
+  transform: translateY(30px) scale(1.01);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Flip alternating sections */
+.feature.flip .feature-text {
+  order: 2;
+}
+
+.feature.flip .feature-image {
+  order: 1;
 }
 
 /* =========================================
@@ -282,53 +368,55 @@ a:hover {
     gap: 1rem;
   }
 
+  .hero-logo {
+    width: 220px;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
 
-  .hero-logo {
-    max-width: 200px;
+  .feature-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature-text {
+    max-width: 100%;
+  }
+
+  .image-frame {
+    width: 100%;
+    height: 240px;
+    transform: none;
   }
 }
 /* =========================================
-   Learn More Buttons (Real Button Style)
+   Contact Email Link (RED + INTERACTIVE)
 ========================================= */
-.learn-more-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 1.75rem;
-  padding: 0.65rem 1.6rem;
-
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: var(--chapel-white);
-  background-color: var(--bulldog-red);
-  border: 2px solid var(--bulldog-red);
-  border-radius: 4px;
-
+#contact a {
+  color: var(--bulldog-red);
+  font-weight: 500;
   text-decoration: none;
-  cursor: pointer;
-
-  transition:
-    background-color 0.25s ease,
-    color 0.25s ease,
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+  position: relative;
+  transition: color 0.25s ease;
 }
 
-.learn-more-btn:hover {
-  background-color: #9f0a26; /* darker UGA red */
-  border-color: #9f0a26;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+#contact a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--bulldog-red);
+  transition: width 0.25s ease;
 }
 
-.learn-more-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+#contact a:hover {
+  color: #9f0a26;
+}
+
+#contact a:hover::after {
+  width: 100%;
 }

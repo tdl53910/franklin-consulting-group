@@ -1,206 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
-  <!-- Mobile + Safari -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
 
-  <title>Franklin Consulting Group</title>
+  <title>Franklin Consulting Group | Student-Led Consulting at the University of Georgia</title>
+  <meta name="description" content="Franklin Consulting Group is a student-led consulting organization within the Franklin College of Arts and Sciences at the University of Georgia.">
 
-  <!-- Favicon / App Icons -->
   <link rel="icon" type="image/png" href="assets/FCG_Logo_Simple.png">
-  <link rel="apple-touch-icon" href="assets/FCG_Logo_Simple.png">
-  <meta name="theme-color" content="#BA0C2F">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-  <!-- ================= Navigation ================= -->
-  <nav class="nav" role="navigation" aria-label="Primary">
-    <div class="nav-container">
+<!-- ================= Navigation ================= -->
+<nav class="nav">
+  <div class="nav-container">
 
-      <div class="nav-brand">
-        <img
-          src="assets/FCG_Logo_Simple.png"
-          alt="Franklin Consulting Group logo"
-        >
-        <span>Franklin Consulting Group</span>
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Our Work</a></li>
-        <li><a href="#students">Students</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#contact" class="cta">Contact</a></li>
-      </ul>
-
+    <div class="nav-brand">
+      <img src="assets/FCG_Logo_Simple.png" alt="Franklin Consulting Group logo">
+      <span>Franklin Consulting Group</span>
     </div>
-  </nav>
 
-  <!-- ================= Hero ================= -->
-  <header class="hero">
-    <div class="hero-content">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#students">Students</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
+    </ul>
 
-      <img
-        src="assets/transparent-logo.png"
-        alt="Franklin Consulting Group Logo"
-        class="hero-logo"
-        loading="eager"
-      >
+  </div>
+</nav>
 
-      <div class="hero-divider"></div>
+<!-- ================= Hero ================= -->
+<header class="hero">
+  <div class="hero-content">
 
-      <h1>Applied Learning. Real Results.</h1>
+    <img src="assets/transparent-logo.png"
+         alt="Franklin Consulting Group Logo"
+         class="hero-logo">
 
+    <div class="hero-divider"></div>
+
+    <h1>Applied Learning. Real Results.</h1>
+
+    <p>
+      Franklin Consulting Group is a student-led consulting organization within the
+      Franklin College of Arts and Sciences at the University of Georgia.
+    </p>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ================= About ================= -->
+<section id="about" class="section reveal">
+  <div class="section-container">
+    <h2>About Franklin Consulting Group</h2>
+
+    <p>
+      Franklin Consulting Group (FCG) was established through the Student Government
+      Association to provide structured, client-based experiential learning.
+    </p>
+
+    <p>
+      The organization connects students with faculty, departments, and partners
+      seeking interdisciplinary, solution-oriented work.
+    </p>
+
+    <a href="about.html" class="learn-more-btn">Learn More</a>
+  </div>
+</section>
+
+<!-- ================= Our Work ================= -->
+<section id="work" class="section alt reveal">
+  <div class="section-container">
+    <h2>Our Work</h2>
+
+    <ul class="grid">
+      <li>
+        <h3>Client-Based Projects</h3>
+        <p>Web platforms, institutional tools, and technical initiatives.</p>
+      </li>
+      <li>
+        <h3>Applied Research</h3>
+        <p>Research support across sciences, humanities, and data-driven work.</p>
+      </li>
+      <li>
+        <h3>Interdisciplinary Cohorts</h3>
+        <p>Skill-aligned teams working under faculty and partner guidance.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= Students ================= -->
+<section id="students" class="section feature reveal">
+  <div class="feature-container">
+
+    <div class="feature-text">
+      <h2>For Students</h2>
+      <p>Hands-on experience working on real projects.</p>
+      <p>Professional skill development and interdisciplinary collaboration.</p>
+      <p>Open to all Franklin College students.</p>
+      <a href="students.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <div class="feature-image">
+      <div class="image-frame">
+        <img src="assets/old_college.jpg" alt="Old College at the University of Georgia">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= Faculty & Partners ================= -->
+<section id="partners" class="section feature flip alt reveal">
+  <div class="feature-container">
+
+    <div class="feature-text">
+      <h2>Faculty &amp; Partners</h2>
+      <p>Collaboration with faculty, departments, and campus partners.</p>
+      <p>Partners propose projects and advise student teams.</p>
+      <a href="partners.html" class="learn-more-btn">Learn More</a>
+    </div>
+
+    <div class="feature-image">
+      <div class="image-frame">
+        <img src="assets/college_of_engineering.jpg" alt="UGA academic facilities">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= Contact ================= -->
+<section id="contact" class="section feature reveal">
+  <div class="feature-container">
+
+    <div class="feature-text">
+      <h2>Contact</h2>
+      <p>Interested in collaborating or learning more?</p>
       <p>
-        Franklin Consulting Group is a student-led consulting organization within the
-        Franklin College of Arts and Sciences at the University of Georgia.
+        <strong>Turner Lent</strong><br>
+        Founder, Franklin Consulting Group<br>
+        <a href="mailto:turner.lent@uga.edu">turner.lent@uga.edu</a>
       </p>
-
     </div>
-  </header>
 
-  <!-- ================= Main Content ================= -->
-  <main role="main">
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section-container">
-        <h2>About Franklin Consulting Group</h2>
-
-        <p>
-          Franklin Consulting Group (FCG) was established through the 38th Student Government Association
-          to provide structured, client-based experiential learning and applied research
-          opportunities for undergraduate students.
-        </p>
-
-        <p>
-          The organization centralizes access to real-world projects across the University of Georgia,
-          connecting students with faculty, departments, and partners seeking interdisciplinary,
-          solution-oriented work.
-        </p>
-
-        <a href="about.html" class="learn-more-btn">Learn More</a>
+    <div class="feature-image">
+      <div class="image-frame">
+        <img src="assets/UGA_Chem.jpeg" alt="University of Georgia research laboratory">
       </div>
-    </section>
+    </div>
 
-    <!-- Our Work -->
-    <section id="work" class="section alt">
-      <div class="section-container">
-        <h2>Our Work</h2>
+  </div>
+</section>
 
-        <ul class="grid">
-          <li>
-            <h3>Client-Based Projects</h3>
-            <p>
-              Website development, student resource platforms, institutional tools,
-              and technical support initiatives.
-            </p>
-          </li>
+</main>
 
-          <li>
-            <h3>Applied Research</h3>
-            <p>
-              Research assistance across the natural sciences, social sciences,
-              humanities, and data-driven initiatives.
-            </p>
-          </li>
+<footer class="footer">
+  <p>© 2026 Franklin Consulting Group · University of Georgia</p>
+  <div class="footer-rule"></div>
+</footer>
 
-          <li>
-            <h3>Interdisciplinary Cohorts</h3>
-            <p>
-              Small, skill-aligned student teams working under faculty and
-              organizational guidance.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Students -->
-    <section id="students" class="section">
-      <div class="section-container">
-        <h2>For Students</h2>
-
-        <p>
-          Students selected for Franklin Consulting Group cohorts gain hands-on experience
-          working on real projects.
-        </p>
-
-        <p>
-          Participants develop professional skills in applied settings and engage in
-          interdisciplinary collaboration across the Franklin College.
-        </p>
-
-        <p>
-          Applications are open to all Franklin College students and are evaluated based on
-          skill alignment, interest, and project needs.
-        </p>
-
-        <a href="students.html" class="learn-more-btn">Learn More</a>
-      </div>
-    </section>
-
-    <!-- Partners -->
-    <section id="partners" class="section alt">
-      <div class="section-container">
-        <h2>Faculty &amp; Partners</h2>
-
-        <p>
-          Franklin Consulting Group collaborates with faculty members, university departments,
-          and campus partners seeking undergraduate involvement in applied initiatives.
-        </p>
-
-        <p>
-          Partners may propose projects, advise student teams, or contribute to the development
-          of the organization’s project pipeline.
-        </p>
-
-        <a href="partners.html" class="learn-more-btn">Learn More</a>
-      </div>
-    </section>
-
-    <!-- Contact (no button here by design) -->
-    <section id="contact" class="section">
-      <div class="section-container">
-        <h2>Contact</h2>
-
-        <p>Interested in collaborating or learning more?</p>
-
-        <p>
-          <strong>Turner Lent</strong><br>
-          Founder, Franklin Consulting Group<br>
-          <a href="mailto:turner.lent@uga.edu">turner.lent@uga.edu</a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= Footer ================= -->
-  <footer class="footer" role="contentinfo">
-    <p>© 2026 Franklin Consulting Group · University of Georgia</p>
-    <div class="footer-rule"></div>
-  </footer>
-
-  <!-- Optional JS -->
-  <script src="js/main.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
