@@ -513,8 +513,8 @@ html {
 .hero {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.72),
-      rgba(255, 255, 255, 0.72)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
     url("../assets/fountain.png");
   background-size: cover;
@@ -523,7 +523,7 @@ html {
 }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
   padding: 2.5rem 2rem;
   border-radius: 12px;
 }
