@@ -504,6 +504,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-
-
+html {
+  scroll-padding-top: 90px;
+}
