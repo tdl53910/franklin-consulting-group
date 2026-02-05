@@ -507,6 +507,10 @@ body {
 html {
   scroll-padding-top: 90px;
 }
+/* Restore CTA color */
+.nav-links a.cta {
+  color: var(--bulldog-red);
+}
 /* =========================================
    Hero Background Image (Tasteful + Professional)
 ========================================= */
@@ -620,5 +624,13 @@ html {
 
   .nav-brand span {
     font-size: 0.95rem;
+  }
+}
+/* Make nav links full width on mobile for easier tapping */
+@media (max-width: 768px) {
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0;
   }
 }
