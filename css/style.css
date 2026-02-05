@@ -507,3 +507,23 @@ body {
 html {
   scroll-padding-top: 90px;
 }
+/* =========================================
+   Hero Background Image (Tasteful + Professional)
+========================================= */
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 255, 255, 0.72)
+    ),
+    url("../assets/fountain.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+}
