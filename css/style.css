@@ -504,6 +504,21 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+html {
+  scroll-padding-top: 90px;
+}
+
+/* Restore CTA color on ALL states, ALL pages */
+.nav a.cta,
+.nav a.cta:link,
+.nav a.cta:visited,
+.nav a.cta:hover,
+.nav a.cta:active {
+  color: var(--bulldog-red);
+  font-weight: 600;
+}
+
 html {
   scroll-padding-top: 90px;
 }
