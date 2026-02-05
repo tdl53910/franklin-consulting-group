@@ -420,3 +420,10 @@ body {
 #contact a:hover::after {
   width: 100%;
 }
+#contact strong {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--arch-black);
+}
+
