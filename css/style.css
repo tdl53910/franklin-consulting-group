@@ -495,8 +495,13 @@ body {
   display: inline-block;
   margin-top: 0.75rem;
 }
-.nav-brand {
+.nav-brand,
+.nav-brand:link,
+.nav-brand:visited,
+.nav-brand:hover,
+.nav-brand:active {
   text-decoration: none;
   color: inherit;
 }
+
 
