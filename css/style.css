@@ -118,7 +118,7 @@ body {
 ========================================= */
 .hero {
   background-color: var(--chapel-white);
-  padding: 4.75rem 1rem 3.75rem;
+  padding: 4.75rem 1rem 8rem;
 }
 
 .hero-content {
@@ -338,6 +338,13 @@ body {
 
 .feature.flip .feature-image {
   order: 1;
+}
+.feature.flip .feature-text {
+  text-align: right;
+  justify-self: end;
+}
+.feature.flip .learn-more-btn {
+  margin-left: auto;
 }
 
 /* =========================================
