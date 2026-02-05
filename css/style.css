@@ -495,13 +495,15 @@ body {
   display: inline-block;
   margin-top: 0.75rem;
 }
-.nav-brand,
-.nav-brand:link,
-.nav-brand:visited,
-.nav-brand:hover,
-.nav-brand:active {
+/* Remove underline from ALL nav links, including logo */
+.nav a,
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
   text-decoration: none;
   color: inherit;
 }
+
 
 
