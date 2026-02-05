@@ -445,3 +445,58 @@ body {
 .image-frame img.spin {
   transform: rotate(360deg);
 }
+/* =========================================
+   About Page Typography Fixes
+========================================= */
+
+/* Improve vertical rhythm between sections */
+.section + .section {
+  margin-top: 1rem;
+}
+
+/* About page headings */
+.page-header + .section h2 {
+  margin-top: 0;
+}
+
+.section h2 {
+  line-height: 1.25;
+}
+
+/* Paragraph spacing consistency */
+.section p {
+  max-width: 68ch;
+}
+
+/* About lists (structure section) */
+.about-list {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-muted);
+}
+
+.about-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--bulldog-red);
+  font-weight: 700;
+}
+
+/* Leadership spacing */
+.section strong {
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+.nav-brand {
+  text-decoration: none;
+  color: inherit;
+}
+
