@@ -434,3 +434,14 @@ body {
   color: var(--arch-black);
 }
 
+/* =========================================
+   Click Spin Animation (IMAGES ONLY)
+========================================= */
+.image-frame img {
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-frame img.spin {
+  transform: rotate(360deg);
+}
